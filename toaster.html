@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+body {
+  font-family: "Roboto Mono", sans-serif;
+  background-color: #000000;
+  opacity: 1;
+  transition: opacity 1s;
+}
+h1,h3 {
+  font-family: "Roboto Mono", sans-serif;
+  background-color: #000000;
+  opacity: 1;
+  transition: opacity 1s, background-color 1.5s, color 1.5s;
+
+}
+.white{
+    font-family: "Roboto Mono", sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+div {
+  font-family: "Roboto Mono", sans-serif;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.hide {
+  visibility: visible;
+  opacity: 0;
+  color:#ffffff;
+}
+.hidee {
+  opacity: 0;
+  visibility: hidden;
+  display:block;
+}
+.hidea {
+  opacity: 0;
+  color:#000000;
+  display:none;
+}
+a {
+  opacity: 1;
+  transition: opacity 1s;
+}
+img {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+</style>
+</head>
+<body onload="a()" id="all" class="hide">
+<div class="w3-display-container w3-mobile w3-text-white w3-right-align" style="height:600px" id="ha">
+    <A href="/b" class="material-icons w3-display-topleft">arrow_back</A>
+    <h1>Genshin Toaster</h1>
+    <h3>stared off as a joke, ending in a actual product</h3>
+    <h5>"yall think im joking?"<br>-tormenmashi_</h5>
+    <img src="/a/to.png" style="width:30%" class="w3-hide-small hide" id="toast">
+    <p>cut a hole,put a lcd in a toaster, that's it right ? no.</p>
+    <p>i actually build a remote eject system inside so it can pop toast on command</p>
+    <p>i actullay have 2 videos on build it</p>
+    <p>i don't recomend you to watch at all it fucking terrible</p>
+    <a href="https://www.youtube.com/watch?v=asbJPCZTpSY" class="w3-hover-opacity">part 1</a> <a href="https://www.youtube.com/watch?v=6GX4CFSYKlwY" class="w3-hover-opacity">part 2</a>
+    <p>my laptop under the table using hdmi to av converter to connect to the toaster <br>using a bluetooth keyborad and a mouse that i use everyday</p>
+    <p>(btw the keyboard is a custom build one you can also watch the video <a href="https://www.youtube.com/watch?v=LPKdlKxfPPs&t=5s" class="w3-hover-opacity">here</a>)</p>
+</div>
+</body>
+</html>
+
+<script>
+    function a() {
+        var y = document.getElementById("all");
+        var x = document.getElementById("toast");
+        y.classList.remove("hide");
+        setTimeout(() => {
+            x.classList.remove("hide")
+            x.classList.add("w3-animate-left")
+        }, 1000)
+    }
+
+</script>
