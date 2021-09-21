@@ -134,13 +134,13 @@ img {
     function a() {
         var y = document.getElementById("all");
         y.classList.remove("hide");
-        pauseother("shitvideo","avideo","starvideo","vovideo")
+        pauseall("shitvideo","avideo","starvideo","vovideo")
     }
     function gentwt() {
         var element = "genshintwt"
         var a = document.getElementById(element);
         hideother("shiass","gayshit","staralign","volume") 
-        pauseother("shitvideo","avideo","starvideo","vovideo")
+        pauseall("shitvideo","avideo","starvideo","vovideo")
         setTimeout(() => { 
         if (a.classList.contains("hidea")) {
             fadein(element)
@@ -155,7 +155,7 @@ img {
         var a = document.getElementById(element);
         var b = document.getElementById("shitvideo");
         hideother("genshintwt","gayshit","staralign","volume") 
-        pauseother("avideo","starvideo","vovideo","huh")
+        pauseother("avideo","starvideo","vovideo")
         setTimeout(() => {
         if (a.classList.contains("hidea")) {
             b.curretnTime = 0;
@@ -172,7 +172,7 @@ img {
         var a = document.getElementById(element);
         var b = document.getElementById("avideo");
         hideother("shiass","genshintwt","staralign","volume") 
-        pauseother("shitvideo","starvideo","vovideo","huh")
+        pauseother("shitvideo","starvideo","vovideo")
         setTimeout(() => {
         if (a.classList.contains("hidea")) {
             b.curretnTime = 0;
@@ -189,7 +189,7 @@ img {
         var a = document.getElementById(element);
         var b = document.getElementById("starvideo");
         hideother("shiass","gayshit","genshintwt","volume") 
-        pauseother("shitvideo","avideo","vovideo","huh")
+        pauseother("shitvideo","avideo","vovideo")
         setTimeout(() => {
         if (a.classList.contains("hidea")) {
             b.curretnTime = 0;
@@ -207,7 +207,7 @@ img {
         var a = document.getElementById(element);
         var b = document.getElementById("vovideo");
         hideother("shiass","gayshit","genshintwt","staralign") 
-        pauseother("shitvideo","avideo","starvideo","huh")
+        pauseother("shitvideo","avideo","starvideo")
         setTimeout(() => {
         if (a.classList.contains("hidea")) {
             b.curretnTime = 0;
@@ -249,15 +249,23 @@ img {
         fadeout(id3)
         fadeout(id4)
     }
-    function pauseother(id1,id2,id3,id4){
+    function pauseother(id1,id2,id3){
         var a = document.getElementById(id1);
         var b = document.getElementById(id2);
         var c = document.getElementById(id3);
-        var d = document.getElementById(id4);
         a.pause(id1)
         b.pause(id2)
         c.pause(id3)
-        d.pause(id4)
+    }
+    function pauseall(){
+        var a = document.getElementById("shitvideo");
+        var b = document.getElementById("avideo");
+        var c = document.getElementById("starvideo");
+        var d = document.getElementById("vovideo");
+        a.pause()
+        b.pause()
+        c.pause()
+        d.pause()
     }
     function text(){
         var x = document.getElementById("h1")
