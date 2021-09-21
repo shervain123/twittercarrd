@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+body {
+  font-family: "Roboto Mono", sans-serif;
+  background-color: #000000;
+  opacity: 1;
+  transition: opacity 1s;
+}
+h1 {
+  font-family: "Roboto Mono", sans-serif;
+  background-color: #000000;
+  opacity: 1;
+  transition: opacity 1s, background-color 1.5s, color 1.5s;
+
+}
+.white{
+    font-family: "Roboto Mono", sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+div {
+  font-family: "Roboto Mono", sans-serif;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.hide {
+  visibility: visible;
+  opacity: 0;
+  color:#ffffff;
+}
+.hidee {
+  opacity: 0;
+  visibility: hidden;
+  display:block;
+}
+.hidea {
+  opacity: 0;
+  color:#000000;
+  display:none;
+}
+a {
+  opacity: 1;
+  transition: opacity 1s;
+}
+img {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+</style>
+</head>
+<body onload="a()" id="all" class="hide">
+<div class="w3-display-container w3-mobile" style="height:600px" id="ha">
+<div class="w3-center w3-text-white" id="a">
+    Other things that I made that is totally pointless
+    <p> </p>
+    <br>
+    <a class="w3-button" href="javascript:void(0)" style="background-color:#101010" onclick="gentwt()" id="twitter">twitter for genshin toaster</a>
+    <a class="w3-button" href="javascript:void(0)" style="background-color:#101010" onclick="pc()"id="shitass">shit ass pc</a>
+    <a class="w3-button" href="javascript:void(0)" style="background-color:#101010" onclick="toaster()" id="genshin">Genshin smart Toaster</a>
+    <a class="w3-button" href="javascript:void(0)" style="background-color:#101010" onclick="stars()" id="starsalign">idk</a>
+    <a class="w3-button" href="javascript:void(0)" style="background-color:#101010" onclick="vol()" id="knob">knob</a>
+</div>
+<p> </p>
+<div class="w3-center w3-text-white">
+    <div id="genshintwt"  class="">
+        <p>Twitter for Genshin smart Toaster</p>
+        <img src="/a/genshintwt.png" style="width:30%" class="w3-hide-small">
+        <img src="/a/genshintwt.png" style="width:100%" class="w3-hide-large w3-hide-medium">
+        <br>
+        <a href="/genhintwt.html">How I made it</a>
+    </div>
+    <div id="shiass"  class="hidea">
+        <p>Shit ass pc</p>
+        <video width="220" height="400" id="shitvideo" controls autoplay muted loop>
+            <source src="/a/shitass.mp4" type="video/mp4">
+          </video> 
+        <br>
+        <a href="/pc.html">How I made it</a>
+    </div>
+    <div id="gayshit"  class="hidea">
+        <p>Genhsin Smart Toaster</p>
+        <video width="300" height="168" id="avideo" controls autoplay muted loop>
+            <source src="/a/toaster.mp4" type="video/mp4">
+          </video> 
+        <br>
+        <a href="/toaster.html">How I made it</a>
+    </div>
+    <div id="staralign"  class="hidea">
+        <p>compilation of maki saying naruhoto</p>
+        <video width="300" height="168" id="starvideo" controls autoplay muted loop>
+            <source src="/a/stars align i think.mp4" type="video/mp4">
+          </video> 
+        <br>
+        <p style="color:#505050">(don't ask why)</p>
+    </div>
+    <div id="volume"  class="hidea">
+        <p>knob</p>
+        <video width="165" height="300" id="vovideo" controls autoplay muted loop>
+            <source src="/a/knob.mp4" type="video/mp4">
+          </video> 
+        <br>
+        <p>Well, it is not made to play genshin tho</p>
+        <p>it's a software volume knob that genshin is one of the function</p>
+    </div>
+    <p> </p>
+    <A href="javascript:void(0)" onclick="wip()" id="gtfo"class="material-icons">arrow_forward</A>
+</div>
+</div>
+<div class="w3-display-container w3-mobile w3-text-white hidea" style="height:600px" id="again">
+    <div class="w3-display-middle">    
+        <h1 id="h1" >_</h1>
+        <A href="javascript:void(0)" onclick="gtfo()" id="maybe"class="material-icons hide">arrow_forward</A>
+    </div>
+
+    
+</div>
+<div class="w3-display-bottommiddle" style="color:#606060"><a href="https://github.com/shervain123/twittercarrd" target="blank">(made with hands)</a></div>
+</body>
+</html>
+
+<script>
+    function a() {
+        var y = document.getElementById("all");
+        y.classList.remove("hide");
+        pauseother("shitvideo","avideo","starvideo","vovideo")
+    }
+    function gentwt() {
+        var element = "genshintwt"
+        var a = document.getElementById(element);
+        hideother("shiass","gayshit","staralign","volume") 
+        pauseother("shitvideo","avideo","star")
+        setTimeout(() => { 
+        if (a.classList.contains("hidea")) {
+            fadein(element)
+        } else {
+            fadeout(element)  
+        }
+    },1000);
+        
+    }
+    function pc() {
+        var element = "shiass"
+        var a = document.getElementById(element);
+        var b = document.getElementById("shitvideo");
+        hideother("genshintwt","gayshit","staralign","volume") 
+        pauseother("avideo","starvideo","vovideo")
+        setTimeout(() => {
+        if (a.classList.contains("hidea")) {
+            b.curretnTime = 0;
+            b.play();
+            fadein(element);
+        } else {
+            b.pause();
+            fadeout(element)  ;
+        }
+    }, 1000);
+    }
+    function toaster() {
+        var element = "gayshit"
+        var a = document.getElementById(element);
+        var b = document.getElementById("avideo");
+        hideother("shiass","genshintwt","staralign","volume") 
+        pauseother("shitvideo","starvideo","vovideo")
+        setTimeout(() => {
+        if (a.classList.contains("hidea")) {
+            b.curretnTime = 0;
+            b.play();
+            fadein(element);
+        } else {
+            b.pause();
+            fadeout(element)  ;
+        }
+    }, 1000);
+    }
+    function stars() {
+        var element = "staralign"
+        var a = document.getElementById(element);
+        var b = document.getElementById("starvideo");
+        hideother("shiass","gayshit","genshintwt","volume") 
+        pauseother("shitvideo","avideo","vovideo")
+        setTimeout(() => {
+        if (a.classList.contains("hidea")) {
+            b.curretnTime = 0;
+            b.play();
+            fadein(element);
+        } else {
+            b.pause();
+            fadeout(element)  ;
+        }
+    }, 1000);
+    }
+
+    function vol() {
+        var element = "volume"
+        var a = document.getElementById(element);
+        var b = document.getElementById("vovideo");
+        hideother("shiass","gayshit","genshintwt","staralign") 
+        pauseother("shitvideo","avideo","starvideo")
+        setTimeout(() => {
+        if (a.classList.contains("hidea")) {
+            b.curretnTime = 0;
+            b.play();
+            fadein(element);
+        } else {
+            b.pause();
+            fadeout(element)  ;
+        }
+    }, 1000);
+    }
+    function wip() {
+        fadeout("ha")
+        setTimeout(() => {fadein("again");text();},1000);
+    }
+    function gtfo() {
+        var x =document.getElementById("h1")
+        setTimeout(() => {x.innerHTML = "_";setTimeout(() => {x.innerHTML = "b_";setTimeout(() => {x.innerHTML = "by_";setTimeout(() => {x.innerHTML = "bye_";setTimeout(() => {x.innerHTML = "bye._";setTimeout(() => {x.innerHTML = "bye.";setTimeout(() => {fadeout("again");setTimeout(() => {window.location.href = "/a.html";}, 1000);},1000);},600);},200);},200);},200);},200);},800);
+        
+    }
+    function fadein(id){
+        var a = document.getElementById(id);
+        a.classList.remove("hidea");
+        a.classList.add("hide");
+        setTimeout(() => {a.classList.remove("hide");}, 100);
+    }
+    function fadeout(id){
+        var a = document.getElementById(id);
+        a.classList.add("hide");
+        setTimeout(() => {a.classList.remove("hide");a.classList.add("hidea");}, 1000);
+    }
+    function hideother(id1,id2,id3,id4){
+        var a = document.getElementById(id1);
+        var b = document.getElementById(id2);
+        var c = document.getElementById(id3);
+        var d = document.getElementById(id4);
+        fadeout(id1)
+        fadeout(id2)
+        fadeout(id3)
+        fadeout(id4)
+    }
+    function pauseother(id1,id2,id3,id4){
+        var a = document.getElementById(id1);
+        var b = document.getElementById(id2);
+        var c = document.getElementById(id3);
+        var d = document.getElementById(id4);
+        a.pause(id1)
+        a.pause(id2)
+        a.pause(id3)
+        a.pause(id4)
+    }
+    function text(){
+        var x = document.getElementById("h1")
+        var y = document.getElementById("maybe")
+        setTimeout(() => {
+            x.innerHTML = "S_";
+            setTimeout(() => {
+                x.innerHTML = "So_";
+                setTimeout(() => {
+                    x.innerHTML = "So _";
+                    setTimeout(() => {
+                        x.innerHTML = "So a_";
+                        setTimeout(() => {
+                            x.innerHTML = "So ag_";
+                            setTimeout(() => {
+                            x.innerHTML = "So aga_";
+                            setTimeout(() => {
+                            x.innerHTML = "So agai_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again _";
+                            setTimeout(() => {
+                            x.innerHTML = "So again p_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again pl_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again ple_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again plea_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again pleas_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please _";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please d_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please do_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don'_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't _";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't f_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't fo_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't fol_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't foll_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follo_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow _";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow m_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me _";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me u_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me un_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unl_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unle_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unles_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless _";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless y_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless yo_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you _";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you w_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you we_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you wer_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you were_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you were _";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you were t_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you were to_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you were tol_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you were told_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you were told _";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you were told t_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you were told to_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you were told to _";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you were told to d_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you were told to do_";
+                            setTimeout(() => {
+                            x.innerHTML = "So again please don't follow me unless you were told to do._";
+                            setTimeout(() => {
+                            x.classList.add("white")
+                            x.innerHTML = "So again please don't follow me unless you were told to do.";
+                            setTimeout(() => {
+                            y.classList.remove("hide")
+                            
+                        }, 1300);
+                        }, 900);
+                        }, 500);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                        }, 100);
+                    }, 100);
+                }, 100);
+            }, 100);
+        }, 1500);
+    }
+</script>
