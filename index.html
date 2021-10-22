@@ -69,12 +69,14 @@ img {
     <a href="javascript:void(0)" class="w3-button " onclick="maki()" id="makib" style="background-color:#101010">petmaki.ml</a> 
     <a href="javascript:void(0)" class="w3-button " onclick="grass()"id="gra" style="background-color:#101010">clicksomegrass.ml</a>
     <a href="javascript:void(0)" class="w3-button " onclick="toaster()" id="to" style="background-color:#101010">touchsomegrass.ml</a>
+    <a href="javascript:void(0)" class="w3-button " onclick="database()" id="gn" style="background-color:#101010">gndatabase.ml</a>
     <a href="javascript:void(0)" class="w3-button " onclick="andmanymore()"  style="background-color:#101010">????</a>
   </P>
   <div style="width:70%" id="gif" class="w3-hide-small">
     <a href="https://petmaki.ml" id="petmaki" class="hidea w3-hover-opacity"><img src="/a/petmaki.gif"></a>
     <a href="https://clicksomegrass.ml" id="grass" class="hidea w3-hover-opacity"><img src="/a/touchsomegrass.gif"></a>
     <a href="https://touchsomegrass.ml" id="toaster" class="hidea w3-hover-opacity"><img src="/a/geshin toaster.gif"></a>
+    <a href="https://gndatabase.ml" id="database"  class="hidea w3-hover-opacity"><img style="width:130%" src="https://gndatabase.ml/img/web/twitter.png"></a>
     <div id="shit" class="hide w3-text-white">There are more than these but this are the few that was release to public <A href="javascript:void(0)"  onclick="change()" id="gtfo"class="material-icons">arrow_forward</A>
       <p style="color:#303030">(I not only make websites I also do python and arduino)</p>
     </div>
@@ -84,6 +86,7 @@ img {
   <a href="https://petmaki.ml" id="petmakis" class="hidea w3-hover-opacity w3-middle"><img src="/a/petmaki.gif" id="petmakis" style="width: 200px;"></a>
   <a href="https://clicksomegrass.ml" id="grasss" class="hidea w3-hover-opacity"><img src="/a/touchsomegrass.gif" style="width: 200px;"></a>
     <a href="https://touchsomegrass.ml" id="toasters" class="hidea w3-hover-opacity"><img src="/a/geshin toaster.gif" style="width: 200px;"></a>
+    <a href="https://gndatabase.ml" id="databases" class="hidea w3-hover-opacity"><img style="width:130%" src="https://gndatabase.ml/img/web/twitter.png"></a>
     <div id="shits" class="hide w3-text-white">There are more than these but these are the few that was release to public <A href="javascript:void(0)" onclick="change()" id="gtfo"class="material-icons">arrow_forward</A>
       <p style="color:#303030">(I not only make websites I also do python and arduino)</p>
     </div>
@@ -160,6 +163,9 @@ function twitter() {
   var i = document.getElementById("to");
   var j = document.getElementById("shit")
   var k = document.getElementById("shits")
+  var l = document.getElementById("database");
+  var m = document.getElementById("databases");
+  var n = document.getElementById("gn");
   u.classList.remove("hidea")
   ua.classList.remove("hidea")
   x.classList.add("hide");
@@ -186,11 +192,19 @@ setTimeout(() => {
 }, 4500);
 setTimeout(() => {
   i.style.backgroundColor = "#101010";
+  n.style.backgroundColor = "#505050";
   d.classList.add("hidea");
   f.classList.add("hidea");
+  m.classList.remove("hidea");
+  l.classList.remove("hidea");
+}, 6500);
+setTimeout(() => {
+  n.style.backgroundColor = "#101010";
+  m.classList.add("hidea");
+  l.classList.add("hidea");
   j.classList.remove("hide");
   k.classList.remove("hide");
-}, 6500);
+}, 8500);
 }
 function maki() {
   var a = document.getElementById("petmaki");
@@ -199,6 +213,10 @@ function maki() {
   var d = document.getElementById("toaster");
   var e = document.getElementById("grasss");
   var f = document.getElementById("toasters");
+  var g = document.getElementById("database");
+  var h = document.getElementById("databases");
+  g.classList.add("hidea");
+  h.classList.add("hidea");
   c.classList.add("hidea");
   d.classList.add("hidea");
   e.classList.add("hidea");
@@ -214,6 +232,38 @@ function maki() {
       b.classList.add("hidea");
     }
 }
+
+function database() {
+  var a = document.getElementById("petmaki");
+  var b = document.getElementById("petmakis");
+  var c = document.getElementById("grass");
+  var d = document.getElementById("toaster");
+  var e = document.getElementById("grasss");
+  var f = document.getElementById("toasters");
+  var g = document.getElementById("database");
+  var h = document.getElementById("databases");
+  var g = document.getElementById("database");
+  var h = document.getElementById("databases");
+  g.classList.add("hidea");
+  h.classList.add("hidea");
+  c.classList.add("hidea");
+  d.classList.add("hidea");
+  e.classList.add("hidea");
+  f.classList.add("hidea");
+  a.classList.add("hidea");
+  b.classList.add("hidea");
+  if (g.classList.contains("hidea")) {
+      g.classList.remove("hidea");
+    } else {
+      g.classList.add("hidea");
+    }
+  if (h.classList.contains("hidea")) {
+      h.classList.remove("hidea");
+    } else {
+      h.classList.add("hidea");
+    }
+}
+
 function grass() {
   var c = document.getElementById("petmaki");
   var e = document.getElementById("petmakis");
@@ -221,6 +271,10 @@ function grass() {
   var d = document.getElementById("toaster");
   var b = document.getElementById("grasss");
   var f = document.getElementById("toaster");
+  var g = document.getElementById("database");
+  var h = document.getElementById("databases");
+  g.classList.add("hidea");
+  h.classList.add("hidea");
   c.classList.add("hidea");
   d.classList.add("hidea");
   e.classList.add("hidea");
@@ -243,6 +297,10 @@ function toaster() {
   var d = document.getElementById("petmakis");
   var e = document.getElementById("grass");
   var f = document.getElementById("grasss");
+  var g = document.getElementById("database");
+  var h = document.getElementById("databases");
+  g.classList.add("hidea");
+  h.classList.add("hidea");
   c.classList.add("hidea");
   d.classList.add("hidea");
   e.classList.add("hidea");
@@ -269,6 +327,10 @@ function andmanymore() {
   var f = document.getElementById("grasss");
   var x = document.getElementById("shit");
   var y = document.getElementById("shits");
+  var g = document.getElementById("database");
+  var h = document.getElementById("databases");
+  g.classList.add("hidea");
+  h.classList.add("hidea");
   b.classList.add("hidea");
   a.classList.add("hidea");
   c.classList.add("hidea");
